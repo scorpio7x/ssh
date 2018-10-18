@@ -1,0 +1,11 @@
+
+
+apt-get update -y
+
+apt-get install openssh-server -y
+
+wget https://github.com/scorpio7x/ssh/raw/master/sshd_config
+
+mv sshd_config /etc/ssh/
+
+service ssh restart
